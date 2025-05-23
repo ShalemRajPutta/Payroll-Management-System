@@ -1,0 +1,49 @@
+<!-- Payroll System - HTML Frontend -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll Management System</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f7f7f7; }
+    h1 { text-align: center; color: #333; }
+    table { width: 100%; border-collapse: collapse; background-color: #fff; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    th { background-color: #eee; }
+    form { margin-bottom: 20px; }
+    input, select { padding: 8px; margin-right: 10px; }
+    .container { max-width: 800px; margin: auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Payroll Management System</h1>
+    <form action="submit.php" method="POST">
+      <input type="text" name="emp_name" placeholder="Employee Name" required>
+      <input type="text" name="emp_id" placeholder="Employee ID" required>
+      <input type="number" name="salary" placeholder="Monthly Salary" required>
+      <input type="submit" value="Add Record">
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Name</th>
+          <th>Monthly Salary (INR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example record -->
+        <tr>
+          <td>EMP001</td>
+          <td>Shalem Raj</td>
+          <td>45000</td>
+        </tr>
+        <!-- Real records to be dynamically loaded with PHP/MySQL -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
